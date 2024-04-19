@@ -1,0 +1,33 @@
+[debug] [2024-04-19T12:16:50.285Z] ----------------------------------------------------------------------
+[debug] [2024-04-19T12:16:50.288Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --project fir-support-testproj
+[debug] [2024-04-19T12:16:50.288Z] CLI Version:   13.7.3
+[debug] [2024-04-19T12:16:50.288Z] Platform:      darwin
+[debug] [2024-04-19T12:16:50.288Z] Node Version:  v20.10.0
+[debug] [2024-04-19T12:16:50.289Z] Time:          Fri Apr 19 2024 20:16:50 GMT+0800 (Philippine Standard Time)
+[debug] [2024-04-19T12:16:50.289Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-19T12:16:50.354Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-19T12:16:50.355Z] > authorizing via signed-in user (alejandromarco@google.com)
+[debug] [2024-04-19T12:16:50.355Z] [iam] checking project fir-support-testproj for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-19T12:16:50.357Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-support-testproj:testIamPermissions [none]
+[debug] [2024-04-19T12:16:50.357Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-support-testproj:testIamPermissions x-goog-quota-user=projects/fir-support-testproj
+[debug] [2024-04-19T12:16:50.357Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-support-testproj:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-19T12:16:51.648Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-support-testproj:testIamPermissions 200
+[debug] [2024-04-19T12:16:51.649Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-support-testproj:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-19T12:16:51.650Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-support-testproj [none]
+[debug] [2024-04-19T12:16:52.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-support-testproj 200
+[debug] [2024-04-19T12:16:52.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-support-testproj {"projectId":"fir-support-testproj","projectNumber":"769244627687","displayName":"Firebase GitHub Support","name":"projects/fir-support-testproj","resources":{"hostingSite":"fir-support-testproj","realtimeDatabaseInstance":"fir-support-testproj-default-rtdb","storageBucket":"fir-support-testproj.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_7275f563-cd70-463e-b725-f80128bed7db"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-19T12:16:57.284Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-support-testproj/sites/fir-support-testproj [none]
+[debug] [2024-04-19T12:16:57.992Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-support-testproj/sites/fir-support-testproj 200
+[debug] [2024-04-19T12:16:57.992Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-support-testproj/sites/fir-support-testproj {"name":"projects/fir-support-testproj/sites/fir-support-testproj","defaultUrl":"https://fir-support-testproj.web.app","appId":"1:769244627687:web:683aef91f01ce11078d842","type":"DEFAULT_SITE"}
